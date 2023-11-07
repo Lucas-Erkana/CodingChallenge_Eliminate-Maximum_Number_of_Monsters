@@ -1,34 +1,29 @@
-# CHallenge Title
+# Eliminate Maximum Number of Monsters
 
-Write problem here
+You are playing a video game where you need to defend your city from a group of monsters. Each monster has an initial distance from the city and a speed at which it moves towards the city. You have a weapon that can eliminate a monster, but it takes one minute to charge.
 
+The goal is to eliminate as many monsters as possible before any of them reach the city. If a monster reaches the city at the exact moment the weapon is fully charged, it counts as a loss.
 
-
-
-## Examples
-
-**Input:**
-```
-Write input here
-```
-**Output:**
-```
-Write expected result here
-```
-**Explanation:**
-Write explanation here
+## Example
 
 **Input:**
 ```
-Write input here
+dist = [1, 3, 4]
+speed = [1, 1, 1]
 ```
+
 **Output:**
 ```
-Write expected result here
+3
 ```
+
 **Explanation:**
-Write explanation here
+In the beginning, the distances of the monsters are [1, 3, 4]. You eliminate the first monster.
+After a minute, the distances of the monsters are [X, 2, 3]. You eliminate the second monster.
+After another minute, the distances of the monsters are [X, X, 2]. You eliminate the third monster.
+You can eliminate all 3 monsters before they reach the city.
 
 ## Constraints
-
-Write constraints here
+- The length of `dist` and `speed` is the same.
+- 1 <= n <= 105
+- 1 <= dist[i], speed[i] <= 105
